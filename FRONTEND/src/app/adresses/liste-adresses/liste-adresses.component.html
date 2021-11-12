@@ -1,0 +1,6 @@
+<p>Liste des contacts : </p>
+
+<div *ngFor="let adresse of liste$ | async, let i = index">
+  Adresse {{ i+1 }} : {{ adresse.numero }} {{ adresse.typeRue }} {{ adresse.nomRue }}, {{ adresse.code }} {{ adresse.ville }}
+  <button (click)="removeAdresse(adresse)"> Supprimer cette adresse </button>
+</div>

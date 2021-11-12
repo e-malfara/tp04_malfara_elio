@@ -1,0 +1,4 @@
+<p>Informations détaillées sur le produit :</p>
+<div> {{ (produit | async)?.nom }} | Développeur : {{ (produit | async)?.dev }} | Note : {{ (produit | async)?.note }} /20</div>
+<br>
+<a [routerLink]="['/produits/catalogueProduits']"> Retour au catalogue des produits</a>

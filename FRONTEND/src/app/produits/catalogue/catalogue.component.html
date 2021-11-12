@@ -1,0 +1,11 @@
+<div>
+<p>Affichage des produits du catalogue :</p> 
+<p>Cliquez sur le nom d'un des produits pour afficher le détail :</p> 
+
+    <div *ngFor="let produit of (listeProduits | async)">
+        <ul>
+            <li><a [routerLink]="['/produits/detailProduit/',produit.id]">{{ produit.nom }}</a></li>
+            <button (click)="addProduit(produit)"> Ajouter au Panier </button>
+        </ul>
+    </div>
+</div>

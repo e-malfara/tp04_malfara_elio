@@ -1,0 +1,17 @@
+<p>Saisie d'une adresse de livraison : </p>
+
+<form [formGroup]="adresseForm">
+  <label>Numéro : <input type="text" formControlName="numero" /></label>
+  <br />
+  <label>Type de rue : <input type="text" formControlName="typeRue" /></label>
+  <br />
+  <label>Nom de la rue : <input type="text" formControlName="nomRue" /></label>
+  <br />
+  <label>Code Postale : <input type="text" formControlName="code" /></label>
+  <br />
+  <label>Ville : <input type="text" formControlName="ville" /></label>
+  <br />
+  <button (click)="addAdresse()">Ajouter un contact</button>
+</form>
+<br />
+<app-liste-adresses></app-liste-adresses>
