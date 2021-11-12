@@ -1,4 +1,4 @@
-<p>Liste des contacts : </p>
+<p>Liste des adresses : </p>
 
 <div *ngFor="let adresse of liste$ | async, let i = index">
   Adresse {{ i+1 }} : {{ adresse.numero }} {{ adresse.typeRue }} {{ adresse.nomRue }}, {{ adresse.code }} {{ adresse.ville }}
